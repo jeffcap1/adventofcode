@@ -1,3 +1,7 @@
+/**
+ * correct answer 66,363
+ */
+
 import fs from 'fs';
 
 // read input file
@@ -30,8 +34,6 @@ lines.forEach((line) => {
   // power => multiple each cube value together
   gamePowers.push(gameValues.red * gameValues.green * gameValues.blue);
 });
-
-console.log({ gamePowers });
 
 const total = gamePowers.reduce((agg, game) => agg + game, 0);
 console.log({ total });

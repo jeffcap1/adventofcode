@@ -1,3 +1,7 @@
+/**
+ * correct answer 507,214
+ */
+
 import fs from 'fs';
 
 // read input file
@@ -10,11 +14,6 @@ const values = [];
 
 const isNumber = (char) => /\d/.test(char);
 const isSymbol = (char) => /[^0-9.]/.test(char);
-
-// attempted answers
-// 509,902 (too high)
-// 508,459 (too high)
-// 507,214 (correct) -> needed to filter empty line at EOF
 
 function checkForAdjacentSymbol(x, y) {
   // check left
