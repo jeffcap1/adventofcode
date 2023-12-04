@@ -1,0 +1,14 @@
+**/.docker
+**/dist
+**/src/data
+package*.json
+CHANGELOG.md
+
+# problem input files
+input.txt
+
+# general
+**/.git
+**/.svn
+**/.hg
+**/node_modules

@@ -6,15 +6,15 @@ const input = fs.readFileSync(file, 'utf-8');
 const lines = input.split('\n');
 
 const nameToNumbersMap = {
-  'one': '1',
-  'two': '2',
-  'three': '3',
-  'four': '4',
-  'five': '5',
-  'six': '6',
-  'seven': '7',
-  'eight': '8',
-  'nine': '9',
+  one: '1',
+  two: '2',
+  three: '3',
+  four: '4',
+  five: '5',
+  six: '6',
+  seven: '7',
+  eight: '8',
+  nine: '9',
 };
 
 const alphaNumSeries = 97;
@@ -22,7 +22,6 @@ const nameToNumberKeys = Object.keys(nameToNumbersMap);
 
 // allows matching on overlapping values
 const regex = new RegExp(`(?=(${nameToNumberKeys.join('|')}))`, 'g');
-
 
 // attempted incorrect answers
 // 48,737 (to low)
@@ -42,7 +41,7 @@ const total = lines.reduce((agg, line) => {
 
   // convert number names to numbers
   let str = line;
-  const matches = Array.from(line.matchAll(regex), x => x[1]);
+  const matches = Array.from(line.matchAll(regex), (x) => x[1]);
 
   // replace only first and last match
   str = str.replace(matches[0], nameToNumbersMap[matches[0]]);
@@ -55,6 +54,4 @@ const total = lines.reduce((agg, line) => {
   return parseInt(numbers[0] + numbers[numbers.length - 1], 10) + agg;
 }, 0);
 
-
 console.log({ total });
-

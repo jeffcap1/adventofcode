@@ -19,4 +19,3 @@ const total = numberOnlyInput.reduce((agg, numbers) => {
 }, 0);
 
 console.log({ total });
-
