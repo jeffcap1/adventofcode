@@ -1,7 +1,3 @@
-/**
- * correct answer 5,329,815
- */
-
 import fs from 'fs';
 
 // read input file
