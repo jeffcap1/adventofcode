@@ -45,12 +45,7 @@ seeds.forEach((seed) => {
     let rowId = 0;
     while (rowId < sectionRows.length && lineValueMap.length < idx + 2) {
       const [destinationRangeStart, sourceRangeStart, rangeLength] = sectionRows[rowId].split(' ');
-      const destination = findDestinationFromSourceRange(
-        lineValueMap[lineValueMap.length - 1],
-        sourceRangeStart,
-        destinationRangeStart,
-        rangeLength
-      );
+      const destination = findDestinationFromSourceRange(lineValueMap[lineValueMap.length - 1], sourceRangeStart, destinationRangeStart, rangeLength);
 
       if (destination) {
         lineValueMap.push(destination);

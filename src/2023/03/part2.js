@@ -19,8 +19,7 @@ function createMovement(board) {
     upLeft: (x, y) => (y - 1 >= 0 && x - 1 >= 0 ? [x - 1, y - 1, board[y - 1][x - 1]] : undefined),
     upRight: (x, y) => (y - 1 >= 0 && x + 1 < board[y].length ? [x + 1, y - 1, board[y - 1][x + 1]] : undefined),
     downLeft: (x, y) => (y + 1 < board.length && x - 1 >= 0 ? [x - 1, y + 1, board[y + 1][x - 1]] : undefined),
-    downRight: (x, y) =>
-      y + 1 < board.length && x + 1 < board[y].length ? [x + 1, y + 1, board[y + 1][x + 1]] : undefined,
+    downRight: (x, y) => (y + 1 < board.length && x + 1 < board[y].length ? [x + 1, y + 1, board[y + 1][x + 1]] : undefined),
   };
 }
 

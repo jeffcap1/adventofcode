@@ -85,9 +85,7 @@ const pipeMovement = {
 const startPos = findStartingPoint(tunnelMapRows);
 const movement = createMovement(tunnelMap);
 const getNextMove = createGetNextMove(movement, pipeMovement);
-const startingMovements = Object.keys(movement).filter((dir) =>
-  isValidStartMove(startPos, dir, movement, pipeMovement)
-);
+const startingMovements = Object.keys(movement).filter((dir) => isValidStartMove(startPos, dir, movement, pipeMovement));
 
 let stepCount = 1;
 let coords = [];

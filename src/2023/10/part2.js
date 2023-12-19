@@ -82,9 +82,7 @@ const pipeMovement = {
 const startPos = findStartingPoint(tunnelMapRows);
 const movement = createMovement(tunnelMap);
 const getNextMove = createGetNextMove(movement, pipeMovement);
-const startingMovements = Object.keys(movement).filter((dir) =>
-  isValidStartMove(startPos, dir, movement, pipeMovement)
-);
+const startingMovements = Object.keys(movement).filter((dir) => isValidStartMove(startPos, dir, movement, pipeMovement));
 
 // create a copy of the map with '.' and then replace with path it's navigated
 const tunnelMapCopy = tunnelMap.map((row) => Array(row.length).fill('.'));
