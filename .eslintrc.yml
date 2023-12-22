@@ -16,3 +16,9 @@ rules:
   import/extensions:
     - error
     - ignorePackages
+  no-unused-vars:
+    - error
+    - argsIgnorePattern: '^_' # <-- NOTE!
+      varsIgnorePattern: '^_'
+      caughtErrorsIgnorePattern: '^_'
+      ignoreRestSiblings: true
