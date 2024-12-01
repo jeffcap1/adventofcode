@@ -31,11 +31,7 @@ lines.forEach((line) => {
   });
 
   // check if desired values were possible this game
-  if (
-    findGameWithValues.red >= gameValues.red &&
-    findGameWithValues.green >= gameValues.green &&
-    findGameWithValues.blue >= gameValues.blue
-  ) {
+  if (findGameWithValues.red >= gameValues.red && findGameWithValues.green >= gameValues.green && findGameWithValues.blue >= gameValues.blue) {
     possibleGames.push(gameId);
   }
 });

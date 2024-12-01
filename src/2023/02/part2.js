@@ -31,7 +31,5 @@ lines.forEach((line) => {
   gamePowers.push(gameValues.red * gameValues.green * gameValues.blue);
 });
 
-console.log({ gamePowers });
-
 const total = gamePowers.reduce((agg, game) => agg + game, 0);
 console.log({ total });
