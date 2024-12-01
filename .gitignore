@@ -3,7 +3,7 @@
 input.txt
 output.txt
 *_input*.txt
-problem-input/
+puzzle-input/
 
 ### macOS ###
 # General
