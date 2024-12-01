@@ -3,6 +3,7 @@
 input.txt
 output.txt
 *_input*.txt
+problem-input/
 
 ### macOS ###
 # General
