@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Advent Of Code",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
