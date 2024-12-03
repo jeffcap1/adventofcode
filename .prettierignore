@@ -3,6 +3,7 @@
 **/src/data
 package*.json
 CHANGELOG.md
+collection/*
 
 # problem input files
 input.txt
